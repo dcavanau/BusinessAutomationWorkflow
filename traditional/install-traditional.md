@@ -23,3 +23,11 @@ The following steps provide details on the installation process. Refer to the [I
     * Using a custom installation and configuration path
       * Installing IBM Business Automation Workflow
         * [Installing silently with a response file](./response_file_install.md)
+      * [Granting write permission of files and directories to nonroot users](./nonroot_permissions.md)
+      * Configuring profiles and creating a network deployment environment
+        * For DB2
+          * Using the BPMConfig command
+            * Creating DB2 databases
+            * Creating profiles, network deployment environments and database tables using BPMConfig
+            * Running the generated database scripts
+      * Loading the database with system information
