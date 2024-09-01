@@ -27,7 +27,7 @@ The following steps provide details on the installation process. Refer to the [I
       * Configuring profiles and creating a network deployment environment
         * For DB2
           * Using the BPMConfig command
-            * Creating DB2 databases
-            * Creating profiles, network deployment environments and database tables using BPMConfig
+            * [Creating DB2 databases](./createDatabases.md)
+            * [Creating profiles, network deployment environments and database tables using BPMConfig](./createProfiles.md)
             * Running the generated database scripts
-      * Loading the database with system information
+      * [Loading the database with system information](./bootstrapData.md)
