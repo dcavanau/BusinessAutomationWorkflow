@@ -31,3 +31,4 @@ The following steps provide details on the installation process. Refer to the [I
             * [Creating profiles, network deployment environments and database tables using BPMConfig](./createProfiles.md)
             * Running the generated database scripts
       * [Loading the database with system information](./bootstrapData.md)
+  * Starting your environment and verifying the installation
