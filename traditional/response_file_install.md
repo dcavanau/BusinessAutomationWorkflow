@@ -1,5 +1,7 @@
 # Installing silently with a response file
 
+This section provides additional notes to supplement the [product documentation](https://www.ibm.com/docs/en/baw/24.x?topic=workflow-installing-silently-using-response-file).
+
 The following response file will be used to install BAW.
 
 * [CIGNA workflow Enterprise 64 bit Linux nonroot response file](./CIGNA_workflowEnterprise_linux_response_nonroot_64bit.xml)

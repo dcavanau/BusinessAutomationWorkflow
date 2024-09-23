@@ -1,5 +1,7 @@
 # Loading the database with system information
 
+This section provides additional notes to supplement the [product documentation](https://www.ibm.com/docs/en/baw/24.x?topic=path-loading-database-system-information).
+
 When you create a deployment environment, the **bootstrapProcessServerData** command must be completed successfully before you try to start or use Workflow Server or Workflow Center.
 
 The following commands were used for this example.

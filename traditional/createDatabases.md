@@ -1,5 +1,7 @@
 # Create DB2 Databases
 
+This section provides additional notes to supplement the [product documentation](https://www.ibm.com/docs/en/baw/24.x?topic=command-creating-db2-databases).
+
 The required databases will created the required databases for IBM® Business Automation Workflow after running the **BPMConfig** command with the **-create -de** parameters to create profiles and configure the deployment environment.
 
 The **BPMConfig** command requires input from a properties file that contains configuration settings for the profiles, deployment environment, and databases to be created. In this file, the **bpm.de.deferSchemaCreation** property determines when the databases can be created:

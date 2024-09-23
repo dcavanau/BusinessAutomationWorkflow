@@ -1,5 +1,7 @@
 # Preparing Linux systems for installation
 
+This section provides additional notes to supplement the [product documentation](https://www.ibm.com/docs/en/baw/24.x?topic=installation-preparing-linux-systems).
+
 * Increase the allowable stack size, number of open files, number of processes, and file size. Add the following lines to the end of the _/etc/security/limits.conf_ file, or if the lines already exist, change the values. In this implementation, the _wasadmin_ account will be executing BAW.
 
     ```text
