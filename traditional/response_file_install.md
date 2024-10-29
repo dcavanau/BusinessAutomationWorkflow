@@ -4,13 +4,13 @@ This section provides additional notes to supplement the [product documentation]
 
 The following response file will be used to install BAW.
 
-* [CIGNA workflow Enterprise 64 bit Linux nonroot response file](./CIGNA_workflowEnterprise_linux_response_nonroot_64bit.xml)
+* [Enterprise 64 bit Linux nonroot response file](./workflowEnterprise_linux_response_nonroot_64bit.xml)
 
 The following commands wikk be executed for the install:
 
 ```sh
 cd /opt/install/responsefiles/BPM
-/opt/install/IM64/userinstc -acceptLicense input /opt/install/responsefiles/BPM/CIGNA_workflowEnterprise_linux_response_nonroot_64bit.xml -log /opt/install/log/silent_install.log -dataLocation /opt/ibm/BPM/IMData
+/opt/install/IM64/userinstc -acceptLicense input /opt/install/responsefiles/BPM/workflowEnterprise_linux_response_nonroot_64bit.xml -log /opt/install/log/silent_install.log -dataLocation /opt/ibm/BPM/IMData
 
 ```
 
