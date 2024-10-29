@@ -16,3 +16,5 @@ The following commands were used for this example.
    ```
 
    This process will take some time. Monitor the generated log file to monitor the progress.
+
+[BACK](./install-traditional.md)
