@@ -12,7 +12,11 @@ The virtual maching used to host BAW is using the following:
 BAW V24.x is being installed. The following base directory structure is being used.
 
 * **/opt/install** : the BAW installation files from the _tar.zg_ files
-* **/opt/ibm/BAW** : target base directory for BAW install
+* **/opt/ibm/BAW** : target base directory for BAW install (owner: wasadmin, group: wasadmin)
+
+The following user accounts will need to be created.
+
+* wasadmin (OS account)
 
 The following steps provide details on the installation process. Refer to the [IBM Business Automation Workflow documentation](https://www.ibm.com/docs/en/baw/24.x) for the complete process.
 
