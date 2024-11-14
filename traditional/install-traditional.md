@@ -5,18 +5,18 @@ The final configuration will be a single node cluster for BAW with an external D
 The virtual maching used to host BAW is using the following:
 
 * CPUs: 8
-* Memory: 8 GB
+* Memory: 16 GB
 * Storage: 40GB
 * OS: RHEL9 configured as server with GUI
 
 BAW V24.x is being installed. The following base directory structure is being used.
 
 * **/opt/install** : the BAW installation files from the _tar.zg_ files
-* **/opt/ibm/BAW** : target base directory for BAW install (owner: wasadmin, group: wasadmin)
+* **/opt/ibm/BAW** : target base directory for BAW install
 
-The following user accounts will need to be created.
+The nonroot user for installation is **wasadmin**.
 
-* wasadmin (OS account)
+The external database instance owner is **db2inst1**. The external database user that BAW will need to access the databases is **db2admin**.
 
 The following steps provide details on the installation process. Refer to the [IBM Business Automation Workflow documentation](https://www.ibm.com/docs/en/baw/24.x) for the complete process.
 
@@ -35,4 +35,4 @@ The following steps provide details on the installation process. Refer to the [I
             * [Creating profiles, network deployment environments and database tables using BPMConfig](./createProfiles.md)
             * [Running the generated database scripts](https://www.ibm.com/docs/en/baw/24.x?topic=command-running-generated-database-scripts)
       * [Loading the database with system information](./bootstrapData.md)
-  * [Starting your environment and verifying the installation](https://www.ibm.com/docs/en/baw/24.x?topic=workflow-starting-your-environment-verifying-installation)
+  * [Starting your environment and verifying the installation](./start-stop.md)

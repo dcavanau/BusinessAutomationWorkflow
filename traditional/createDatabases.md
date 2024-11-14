@@ -18,13 +18,23 @@ To generate the database scripts that can be used by the **BPMConfig** command t
 
 The configuration properties file used for this example is [Advanced Process Center Signle Cluster DB2](./Advanced-PC-SingleCluster-DB2.properties).
 
-1. Execute the following commands on the BPM Virtual Machine as _root_:
+1. Execute the following commands on the BPM Virtual Machine as _wasadmin_:
 
    ```sh
-   cd /opt/ibm/BPM/v24.0/bin/
+   cd /opt/ibm/BAW/v24.0/bin/
    mkdir /opt/install/dbfiles
 
    ./BPMConfig.sh -create -sqlfiles /opt/install/Advanced-PC-SingleCluster-DB2.properties -outputDir /opt/install/dbfiles/
+   ```
+
+   The response will be similar to this:
+
+   ```text
+   Logging to file /opt/ibm/BAW/v24.0/logs/config/BPMConfig_create_20241111-110013.log.
+   Generating database configuration files to /opt/install/dbfiles/PCCell1.
+   Generating database configuration files to /opt/install/dbfiles/PCCell1.De1.
+   Generating database configuration files to /opt/install/dbfiles/PCCell1.
+   Generating database configuration files to /opt/install/dbfiles/PCCell1.De1.
    ```
 
    [Here are the generated database scripts](./dbfiles/)
@@ -57,14 +67,13 @@ The configuration properties file used for this example is [Advanced Process Cen
 
    cd /home/db2inst1/dbfiles/PCCell1.De1/DB2/PDWDB
    ./createDatabase.sh
-   db2 connect to PDWDB USER db2admin USING Think4me
+   db2 connect to PDWDB USER db2admin USING Think4me  
    db2 -tvf createSchema_Advanced.sql
    db2 connect reset
 
    cd /home/db2inst1/dbfiles/PCCell1.De1/DB2/CPEDB
    ./createDatabase_ECM.sh
    db2 connect to CPEDB USER db2admin USING Think4me
-   db2 -tvf createSchema_Advanced.sql
    db2 -tvf createTablespace_Advanced.sql
    db2 connect reset
   

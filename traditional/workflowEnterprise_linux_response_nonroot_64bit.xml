@@ -79,7 +79,7 @@ restricted by GSA ADP Schedule Contract with IBM Corp.
     If the specified profile node ID exists, you must also change the profile node ID.
     
     ============================================================================--> 
-    <profile installLocation='/opt/ibm/BAW/v24.0' id='IBM WebSphere Application Server Network Deployment V8.5'>
+    <profile installLocation='/opt/ibm/BPM/v24.0' id='IBM WebSphere Application Server Network Deployment V8.5'>
 
 
 
